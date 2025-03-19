@@ -74,24 +74,25 @@ text
 
 1.  **Clone the Repository:**
 
-git clone [repository_url]
-cd [repository_directory]
+```
+git clone https://github.com/Shiv-D-Coder/Hotel-Booking-Analyzer
+cd Hotel-Booking-Analyzer
+```
 
-text
 
 2.  **Create and Activate a Virtual Environment:**
-
+```
 python3 -m venv venv
-source venv/bin/activate # On Linux or macOS
-venv\Scripts\activate # On Windows
 
-text
+venv\Scripts\activate # On Windows
+```
+
 
 3.  **Install Dependencies:**
 
+```
 pip install -r requirements.txt
-
-text
+```
 
 ## Usage
 
@@ -99,23 +100,24 @@ text
 
 Create a `.env` file in the project root directory and add the following variables:
 
+```
 GROQ_API_KEY=YOUR_GROQ_API_KEY
 CSV_PATH=Data/processed_data1.csv
-PORT=8000
+```
 
-text
+
 
 -   `GROQ_API_KEY`: Your Groq API key.
 -   `CSV_PATH`: Path to the CSV file containing hotel booking data.
--   `PORT`: Port number for the API to listen on.
 
 ### Running the API
 
 Run the FastAPI application using Uvicorn:
 
+```
 uvicorn api:app --reload --host 0.0.0.0 --port 8000
+```
 
-text
 
 ### Endpoints
 
@@ -139,8 +141,6 @@ The API provides the following endpoints:
 "top_k": 5
 }
 
-text
-
 **Response:**
 
 {
@@ -156,8 +156,6 @@ text
 }
 }
 
-text
-
 ### /analytics
 
 -   **Method:** `POST`
@@ -169,7 +167,6 @@ text
 "report_type": "summary"
 }
 
-text
 
 **Response:**
 
@@ -194,8 +191,6 @@ text
 }
 }
 
-text
-
 ### /health
 
 -   **Method:** `GET`
@@ -208,8 +203,6 @@ text
 "rag_system_initialized": true,
 "timestamp": "2025-03-19T20:12:00"
 }
-
-text
 
 ## Sample Requests
 
