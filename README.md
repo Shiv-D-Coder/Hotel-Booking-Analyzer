@@ -56,11 +56,6 @@ The Hotel Booking Data RAG API is designed to provide an interface for querying 
 - `uvicorn`: ASGI server for running the API.
 - `python-dotenv`: For loading environment variables from a `.env` file.
 
-To install all dependencies, run:
-
-pip install pandas numpy faiss-cpu scikit-learn groq fastapi uvicorn python-dotenv
-
-text
 
 ## Setup
 
@@ -84,6 +79,10 @@ venv\Scripts\activate # On Windows
 
 ```
 pip install -r requirements.txt
+```
+or run below on terminal
+```
+pip install pandas numpy faiss-cpu scikit-learn groq fastapi uvicorn python-dotenv
 ```
 
 ## Usage
