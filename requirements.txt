@@ -1,0 +1,9 @@
+fastapi==0.110.1
+uvicorn==0.30.1
+python-dotenv==1.0.1
+pandas==2.2.1
+numpy==1.26.4
+faiss-cpu==1.7.4
+scikit-learn==1.4.1
+groq==0.4.0
+pydantic==2.7.1
