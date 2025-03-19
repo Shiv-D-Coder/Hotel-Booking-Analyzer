@@ -4,25 +4,25 @@ This project implements a Retrieval-Augmented Generation (RAG) system for queryi
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [File Structure](#file-structure)
-- [Dependencies](#dependencies)
-- [Setup](#setup)
-- [Usage](#usage)
-  - [Environment Variables](#environment-variables)
-  - [Running the API](#running-the-api)
-  - [Endpoints](#endpoints)
-- [API Endpoints](#api-endpoints)
-  - [/ask](#ask)
-  - [/analytics](#analytics)
-  - [/health](#health)
-- [Sample Requests](#sample-requests)
-  - [Ask a Question](#ask-a-question)
-  - [Get Analytics](#get-analytics)
-- [RAG Implementation](#rag-implementation)
-- [Data](#data)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
+-   [Overview](#overview)
+-   [File Structure](#file-structure)
+-   [Dependencies](#dependencies)
+-   [Setup](#setup)
+-   [Usage](#usage)
+    -   [Environment Variables](#environment-variables)
+    -   [Running the API](#running-the-api)
+    -   [Endpoints](#endpoints)
+-   [API Endpoints](#api-endpoints)
+    -   [/ask](#ask)
+    -   [/analytics](#analytics)
+    -   [/health](#health)
+-   [Sample Requests](#sample-requests)
+    -   [Ask a Question](#ask-a-question)
+    -   [Get Analytics](#get-analytics)
+-   [RAG Implementation](#rag-implementation)
+-   [Data](#data)
+-   [Future Enhancements](#future-enhancements)
+
 
 ## Overview
 
@@ -30,28 +30,20 @@ The Hotel Booking Data RAG API is designed to provide an interface for querying 
 
 ## File Structure
 
-.
-├── .env # Environment variables
+| File/Directory            | Description                                                                 |
+| ------------------------- | --------------------------------------------------------------------------- |
+| `.env`                    | Environment variables                                                       |
+| `api.py`                  | FastAPI application code                                                     |
+| `RAG.py`                  | RAG code with FAISS implementation                                         |
+| `RAG_with_FastAPI.py`     | Sample code combining RAG and FastAPI in a single file                    |
+| `Hotel_Booking_EDA.ipynb` | Jupyter Notebook for Exploratory Data Analysis (EDA)                      |
+| `requirements.txt`        | List of dependencies                                                        |
+| `Data/`                   | Data directory                                                              |
+| `hotel_bookings.csv`      | Original hotel bookings data                                                |
+| `processed_data.csv`      | Processed data with cleaning                                                |
+| `sample_processed_data.csv` | Sample data (1000 rows) for testing                                        |
+| `README.md`               | This README file  
 
-├── api.py # FastAPI application code
-
-├── RAG.py # RAG code with FAISS implementation
-
-├── RAG_with_FastAPI.py # Sample code combining RAG and FastAPI in a single file
-
-├── Hotel_Booking_EDA.ipynb # Jupyter Notebook for Exploratory Data Analysis (EDA)
-
-├── Data/ # Data directory
-
-│ ├── hotel_bookings.csv # Original hotel bookings data
-
-│ ├── processed_data.csv # Processed data with cleaning
-
-│ └── sample_processed_data.csv # Sample data (1000 rows) for testing
-
-└── README.md # This README file
-
-text
 
 ## Dependencies
 
