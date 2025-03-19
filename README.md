@@ -32,14 +32,23 @@ The Hotel Booking Data RAG API is designed to provide an interface for querying 
 
 .
 ├── .env # Environment variables
+
 ├── api.py # FastAPI application code
+
 ├── RAG.py # RAG code with FAISS implementation
+
 ├── RAG_with_FastAPI.py # Sample code combining RAG and FastAPI in a single file
+
 ├── Hotel_Booking_EDA.ipynb # Jupyter Notebook for Exploratory Data Analysis (EDA)
+
 ├── Data/ # Data directory
+
 │ ├── hotel_bookings.csv # Original hotel bookings data
+
 │ ├── processed_data.csv # Processed data with cleaning
+
 │ └── sample_processed_data.csv # Sample data (1000 rows) for testing
+
 └── README.md # This README file
 
 text
